@@ -1,0 +1,26 @@
+$width: 60, 80, 100;
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.white{
+    color: $white;
+}
+
+.red-rose{
+    font-family: 'Red Rose';
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+@each $item in $width{
+    .width-#{$item} {
+        width: $item + '%';
+    }
+}
+.width-fit{
+    width: fit-content;
+}

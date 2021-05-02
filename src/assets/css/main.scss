@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Red+Rose);
+
+@import "color";
+@import "utils";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: $mainColor;
+}
+
+.topbar{
+    background-color: $tertiaryColor;
+    padding: 8px;
+}
