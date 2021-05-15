@@ -1,15 +1,19 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import Button from '../button';
 
-const TopBar = (props) => {
+const TopBar = React.forwardRef((props,ref) => {
 
     return(
-        <div className="topbar width-100 flex-row">
-            <h4 className="width-fit">TaskCo</h4>
-            <FontAwesomeIcon icon={ faUserCircle } />
+        <div className="topbar flex-row" ref={ ref }>
+            <a href="/">
+                <h3 className="width-fit font-size-24">TaskCo</h3>
+            </a>
+            
+            <Button action = { props.buttonAction }>
+                {props.buttonContent}
+            </Button>
         </div>
     );
-}
+})
 
 export default TopBar;

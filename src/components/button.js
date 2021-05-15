@@ -3,10 +3,13 @@ import React from 'react';
 const Button = (props) => {
     return(
         <button
-            className = { props.class }
-            onClick = { props.onclick }
+            className = { props.class || "default-button" }
+            id = { props.id }
+            type = { props.type }
+            style = { props.style }
+            onClick = { props.action }
         >
-            Button
+            { props.children }
         </button>
     );
 }

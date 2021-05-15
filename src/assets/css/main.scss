@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:400,500,700);
 @import url(https://fonts.googleapis.com/css2?family=Red+Rose);
 
 @import "color";
@@ -8,13 +8,46 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
 }
 
 body{
-    background-color: $mainColor;
+    background-color: $white;
+}
+
+.main-container{
+    
 }
 
 .topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: $tertiaryColor;
-    padding: 8px;
+    padding: 8px 16px;
+}
+
+.default-button{
+    background-color: $tertiaryColor;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.default-button:hover{
+    background-color: $darkGrey;
+    color: $white;
+}
+
+.default-input{
+    padding: 5px 10px;
+    border: solid 1px $grey;
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
 }

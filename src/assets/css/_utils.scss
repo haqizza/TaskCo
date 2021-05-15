@@ -1,9 +1,15 @@
 $width: 60, 80, 100;
+$padding: 5, 10, 15, 20, 40;
+$font: 16, 18, 20, 24, 32, 38, 40;
 
 .flex-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.flex-align-baseline{
+    align-items: baseline;
 }
 
 .white{
@@ -18,9 +24,29 @@ $width: 60, 80, 100;
 
 @each $item in $width{
     .width-#{$item} {
-        width: $item + '%';
+        width: $item * 1%;
     }
 }
 .width-fit{
     width: fit-content;
+}
+
+@each $item in $padding{
+    .px-#{$item} {
+        padding-left: $item + px;
+        padding-right: $item + px;
+    }
+}
+
+@each $item in $padding{
+    .py-#{$item} {
+        padding-top: $item + px;
+        padding-bottom: $item + px;
+    }
+}
+
+@each $item in $font{
+    .font-size-#{$item} {
+        font-size: $item + px;
+    }
 }
