@@ -5,10 +5,12 @@ import { BrowserRouter} from 'react-router-dom';
 import RootRouter from './router';
 import { UserContext } from './services/UserContext';
 import UserService from './services/User.service';
+import { LayoutProvider } from './components/Layout/layoutContext';
 
 const App = () =>{
     const [user, setUser] = useContext(UserContext);
     const userData = user;
+    console.log(userData);
 
     useEffect(() => {
         if( UserService.isLoggedIn() ){
@@ -17,15 +19,17 @@ const App = () =>{
             userData["userType"] = "user";
             userData["displayName"] = "User Aku";
             // userData["userData"] = auth.data;
-            setUser(userData);
-            console.log(userData);
+            setUser(UserService.getCurrentUser);
+            // console.log(userData);
         }
-    },);
+    },[]);
 
     return(
         <BrowserRouter>
-            <RootRouter>
-            </RootRouter>
+            <LayoutProvider>
+                <RootRouter>
+                </RootRouter>
+            </LayoutProvider>
         </BrowserRouter>
     )
 }

@@ -2,8 +2,9 @@ import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router';
 import Button from '../../components/button';
 import Input from '../../components/input';
-import TopBar from '../../components/TopBar';
+import DefaultLayout from '../../components/Layout/defaultLayout';
 import AuthService from '../../services/Auth.service';
+import UserService from '../../services/User.service';
 import { UserContext } from '../../services/UserContext';
 
 const LoginPage = (props) => {
@@ -16,19 +17,21 @@ const LoginPage = (props) => {
 
 
     const login = (e) => {
-        e.preventDefault();
-        AuthService.login(username, password);
+        // e.preventDefault();
+        let auth = AuthService.login(username, password);
         
-        if(true){
+        if(auth){
             userData["isLoggedIn"] = true;
             // userData["userType"] = auth.data["userType"];
             userData["userType"] = "user";
             userData["displayName"] = "User Aku";
             // userData["userData"] = auth.data;
             setUser(userData);
-            console.log(userData);
 
-            history.push('/dashboard');
+            UserService.saveCurrentUser(user);
+
+            console.log(userData);
+            history.replace('/dashboard');
         }
     }
 
@@ -42,9 +45,8 @@ const LoginPage = (props) => {
 
     return(
         <div>
-            <TopBar />
-            <div>
-                <form onSubmit={ () => { login() } }>
+            <DefaultLayout>
+                <form onSubmit={() => { login() }}>
                     <Input 
                         type="text"
                         onChange={ updateUsername } 
@@ -59,7 +61,7 @@ const LoginPage = (props) => {
                         Login
                     </Button>
                 </form>
-            </div>
+            </DefaultLayout>
         </div>
     )
 }

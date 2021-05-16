@@ -11,10 +11,9 @@ const LandingPage = (props) => {
 
     return(
         <div>
-            <TopBar
-                buttonAction = { goToLoginPage }
-                buttonContent = "Login"
-            />
+            <TopBar buttonAction = { goToLoginPage } >
+                Login
+            </TopBar>
             <h1 className="px-15" >TaskCo</h1>
         </div>
     )

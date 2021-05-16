@@ -10,7 +10,7 @@ const TopBar = React.forwardRef((props,ref) => {
             </a>
             
             <Button action = { props.buttonAction }>
-                {props.buttonContent}
+                {props.children}
             </Button>
         </div>
     );

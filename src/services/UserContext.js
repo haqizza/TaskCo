@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react';
+import UserService from './User.service';
 
 export const UserContext = createContext();
 
@@ -12,6 +13,10 @@ export const UserProvider = (props) => {
             displayName: ''
         }
     });
+
+    // UserService.saveCurrentUser(user);
+    // setUser(UserService.getCurrentUser());
+
     return(
         <UserContext.Provider value={ [user, setUser] }>
             { props.children }

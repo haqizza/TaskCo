@@ -6,9 +6,7 @@ const UserDashboard = () => {
     
     return(
         <UserLayout>
-            <div>
-                user
-            </div>
+            
         </UserLayout>
     );
 }

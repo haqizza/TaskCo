@@ -13,6 +13,7 @@ class AuthService{
     //       localStorage.setItem('user', JSON.stringify(response.data));
     //   }
       localStorage.setItem('login', true);
+      return true;
     //   return response.data;
   }
 
