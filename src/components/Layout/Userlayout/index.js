@@ -1,37 +1,52 @@
-import React, { useEffect, useState } from 'react';
-import Sidebar from '../../SideBar';
+import React, { useContext, useEffect, useState } from 'react';
+import { UserContext } from '../../../services/UserContext';
+import Sidebar from '../../Sidebar';
 import DefaultLayout from '../defaultLayout';
 
 const UserLayout = (props) => {
-    const [currentClass, setCurrentClass] = useState('');
+    const [user, setUser] = useContext(UserContext);
     const [width, setWidth] = useState(0);
     
     useEffect(() => {
         setWidth(window.innerWidth);
     }, [])
 
+
     const menus = [
-        {
-            title: "Class",
-            link: "/class/" + currentClass
-        },
         {
             title: "Profile",
             link: "/profile"
         },
         {
+            title: "Class",
+            link: "/class"
+        },
+        {
             title: "Note",
             link: "/note"
         }
-    ]
+    ];
+    
+    if(user.userData.class_representative === true){
+        menus.push({
+            title: "Setting",
+            link: "/setting"
+        });
+    }
     
     return(
-        <DefaultLayout>
-            <div className="flex-row justify-start">
-                <Sidebar menus={ menus } />
-                <div style={{width: (width - (width * 18/100)) + "px"}}>
-                    { props.children }
-                </div>
+        <DefaultLayout
+            
+        >
+            <Sidebar menus={ menus }/>
+            <div
+                className="px-20 py-20"
+                style={{
+                    width: "100%", 
+                    marginLeft: width * 18/100 + "px"
+                }}
+            >
+                { props.children }
             </div>
         </DefaultLayout>
     );

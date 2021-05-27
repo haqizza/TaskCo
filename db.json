@@ -1,0 +1,165 @@
+{
+  "user": [
+    {
+      "username": "1900011",
+      "password": "user",
+      "student_id": "1900011",
+      "user_banned": false
+    },
+    {
+      "username": "admin ",
+      "password": "admin",
+      "student_id": "0",
+      "user_banned": false
+    }
+  ],
+  "student": [
+    {
+      "student_id": "1900011",
+      "faculty_id": "D",
+      "study_program_name": "Ilmu Kompyuter",
+      "student_name": "Mahasiswa A",
+      "student_place_of_birth": "Bandung",
+      "student_date_of_birth": "10-28-2000",
+      "student_gender": "Laki-Laki",
+      "student_entry_year": "01-09-2019",
+      "student_bio": "hjsadgjahsjhgdasmbzcxhjgdsagsadhjgjhgjhgjasdghjgdjhgsadsahdgshdagddd",
+      "user_picture": "",
+      "class_id": "C2POW19",
+      "class_representative": true
+    }
+  ],
+  "class": [
+    {
+      "faculty_id": "D",
+      "study_program_id": "D561",
+      "course_id": "7Y810UU",
+      "class_id": "C2POW19",
+      "lecturer_id": "18372",
+      "student_id": "1900011",
+      "class_name": "IlkomC2 2019",
+      "class_year": "01-09-2019",
+      "class_schedule": "",
+      "member_number": 43
+    }
+  ],
+  "lesson": [
+    {
+      "lesson_id": "L0182",
+      "lesson_name": "Matkul 1",
+      "lesson_lecturer": "Mr. Ambar"
+    },
+    {
+      "lesson_id": "K0172",
+      "lesson_name": "Matkul 2",
+      "lesson_lecturer": "Drs. Bambang"
+    },
+    {
+      "lesson_id": "K1182",
+      "lesson_name": "Matkul 3",
+      "lesson_lecturer": "Dr. Asep"
+    }
+  ],
+  "material": [
+    {
+      "type": "lecturer",
+      "material_id": "RL01",
+      "material_name": "Materi 1",
+      "material_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere ligula quis sollicitudin tristique. Sed odio quam, porta et lacus sed, hendrerit tincidunt dui. Morbi dignissim libero a facilisis fringilla. Fusce a velit risus. Etiam nisl ipsum, varius et ante quis, porta commodo metus. Integer laoreet eleifend nulla, at malesuada ipsum luctus eget. Nulla tincidunt nulla magna, et rutrum lorem mollis         ut. Morbi luctus finibus ullamcorper. Duis ut convallis leo. Ut condimentum viverra         felis sit amet viverra. Integer blandit placerat est, sed imperdiet risus posuere et.",
+      "material_path": ""
+    },
+    {
+      "type": "lecturer",
+      "material_id": "RL02",
+      "material_name": "Materi 2",
+      "material_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere ligula quis",
+      "material_path": ""
+    },
+    {
+      "type": "user",
+      "material_id": "RU01",
+      "material_name": "Materi U1",
+      "material_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere ligula quis sollicitudin tristique. Sed odio quam, porta et lacus sed,",
+      "material_path": ""
+    },
+    {
+      "type": "user",
+      "material_id": "RU02",
+      "material_name": "Materi U2",
+      "material_desc": "m a t e r     i 1 2  34 5 6 7 8 7 6 5 4 3 2 2    1      1  2  1     2    3 1    2  3",
+      "material_path": ""
+    }
+  ],
+  "task": [
+    {
+      "task_id": "T011213",
+      "task_name": "Tugas 1",
+      "task_desc": "m a t e r     i 1 2  34 5 6 7 8 7 6 5 4 3 2 2    1      1  2  1     2    3 1    2  3",
+      "task_path": ""
+    },
+    {
+      "task_id": "T012513",
+      "task_name": "Tugas 2",
+      "task_desc": "ビフバーグ   1  2  1     2    3 1    2  3",
+      "task_path": ""
+    },
+    {
+      "task_id": "T0122113",
+      "task_name": "Tugas 3",
+      "task_desc": "さらに上へ目指せる",
+      "task_path": ""
+    }
+  ],
+  "classMember":[
+    {
+        "student_id": "1908283",
+        "student_name": "Mhs D"
+    },
+    {
+        "student_id": "1908124",
+        "student_name": "Mhs L"
+    }
+  ],
+  "classMemberReq": [
+    {
+        "student_id": "1907381",
+        "student_name": "Mhs G"
+    },
+    {
+        "student_id": "1906263",
+        "student_name": "Mhs O"
+    }
+  ],
+  "note": [
+    {
+      "note_id": "01872",
+      "note_name": "Judul",
+      "note_desc": "Lorem ipsum un dolor sit amet-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "note_timestamp": "20-04-2021",
+      "publicity": true
+    },
+    {
+      "note_id": "as2344",
+      "note_name": "Judul 2",
+      "note_desc": "Lorem ipsum dah ah males",
+      "note_timestamp": "01-05-2021",
+      "publicity": false
+    }
+  ],
+  "deadline": [
+    {
+        "cl_assignment_id": "T1",
+        "cl_assignment_name": "Tugas 1",
+        "cl_assignment_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere ligula quis sollicitudin tristique. Sed odio quam, porta et lacus sed, hendrerit tincidunt dui. Morbi dignissim libero a facilisis fringilla. Fusce a velit risus. Etiam nisl ipsum, varius et ante quis, porta commodo metus. Integer laoreet eleifend nulla, at malesuada ipsum luctus eget. Nulla tincidunt nulla magna, et rutrum lorem mollis         ut. Morbi luctus finibus ullamcorper. Duis ut convallis leo. Ut condimentum viverra         felis sit amet viverra. Integer blandit placerat est, sed imperdiet risus posuere et.",
+        "cl_assignment_start": "29-04-2021",
+        "cl_assignment_end": "26-05-2021"
+    },
+    {
+        "cl_assignment_id": "T2",
+        "cl_assignment_name": "Tugas 2",
+        "cl_assignment_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere ligula ",
+        "cl_assignment_start": "29-04-2021",
+        "cl_assignment_end": "27-05-2021"
+    }
+  ]
+}

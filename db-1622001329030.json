@@ -1,0 +1,61 @@
+{
+  "user": [
+    {
+      "username": "1900011",
+      "password": "user",
+      "student_id": "1900011",
+      "user_banned": false
+    },
+    {
+      "username": "admin ",
+      "password": "admin",
+      "student_id": "0",
+      "user_banned": false
+    }
+  ],
+  "student": [
+    {
+      "student_id": "1900011",
+      "faculty_id": "D",
+      "study_program_name": "Ilmu Kompyuter",
+      "student_name": "Mahasiswa A",
+      "student_place_of_birth": "Bandung",
+      "student_date_of_birth": "10-28-2000",
+      "student_gender": "Laki-Laki",
+      "student_entry_year": "01-09-2019",
+      "student_bio": "hjsadgjahsjhgdasmbzcxhjgdsagsadhjgjhgjhgjasdghjgdjhgsadsahdgshdagddd",
+      "user_picture": "",
+      "class_id": "C2POW19",
+      "class_representative": true
+    }
+  ],
+  "class": [
+    {
+      "faculty_id": "D",
+      "study_program_id": "D561",
+      "course_id": "7Y810UU",
+      "class_id": "C2POW19",
+      "lecturer_id": "18372",
+      "student_id": "1900011",
+      "class_name": "IlkomC2 2019",
+      "class_year": "01-09-2019",
+      "member_number": 43
+    }
+  ],
+  "note": [
+    {
+      "note_id": "01872",
+      "note_name": "Judul",
+      "note_desc": "Lorem ipsum un dolor sit amet-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+      "note_timestamp": "20-04-2021",
+      "publicity": true
+    },
+    {
+      "note_id": "as2344",
+      "note_name": "Judul 2",
+      "note_desc": "Lorem ipsum dah ah males",
+      "note_timestamp": "01-05-2021",
+      "publicity": false
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Sidebar from '../../SideBar';
+import Sidebar from '../../Sidebar';
 import DefaultLayout from '../defaultLayout';
 
 const AdminLayout = (props) => {
@@ -13,21 +13,29 @@ const AdminLayout = (props) => {
     const menus = [
         {
             title: "Class",
-            link: "/class/" + currentClass
+            link: "/admin/class"
         },
         {
-            title: "Users",
-            link: "/users"
+            title: "Class Representative",
+            link: "/admin/class-representative"
+        },
+        {
+            title: "User",
+            link: "/admin/user"
         }
     ]
     
     return(
         <DefaultLayout>
-            <div className="flex-row justify-start">
-                <Sidebar menus={ menus } />
-                <div style={{width: (width - (width * 18/100)) + "px"}}>
-                    { props.children }
-                </div>
+            <Sidebar menus={ menus }/>
+            <div
+                className="px-20 py-20"
+                style={{
+                    width: "100%", 
+                    marginLeft: width * 18/100 + "px"
+                }}
+            >
+                { props.children }
             </div>
         </DefaultLayout>
     );

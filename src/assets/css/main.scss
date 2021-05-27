@@ -1,8 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:400,500,700);
-@import url(https://fonts.googleapis.com/css2?family=Red+Rose);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700);
+@import url(https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;700);
 
 @import "color";
 @import "utils";
+
+:root{
+    --black: #2c2c2c;
+}
 
 *{
     padding: 0;
@@ -18,10 +22,23 @@ body{
 
 .sidebar{
     width: 18%;
-    position: absolute;
+    position: fixed;
+    height: auto;
     top: 45px;
     bottom: 0;
     background-color: $tertiaryColor;
+}
+
+.title-big{
+    font-size: 3em;
+}
+
+.title{
+    font-size: 2em;
+}
+
+.title-little{
+    font-size: 1.5em;
 }
 
 .menu-item{
@@ -47,25 +64,83 @@ body{
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.icon-button{
+    background-color: transparent;
+    color: $grey;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+}
+.icon-button:hover{
+    background-color: $grey;
+    color: $white;
+}
+
 .default-button{
-    background-color: $tertiaryColor;
-    padding: 5px 10px;
-    border-radius: 10px;
+    background-color: $grey;
+    color: $white;
+    padding: 8px 24px;
+    border-radius: 8px;
     border: none;
 }
 
 .default-button:hover{
-    background-color: $darkGrey;
+    background-color: $darkGrey !important;
     color: $white;
 }
 
 .default-input{
-    padding: 5px 10px;
+    padding: 8px 16px;
     border: solid 1px $grey;
     border-radius: 8px;
+    font-weight: 400;
+    resize: none;
+}
+
+.default-card{
+    padding: 8px 16px;
+    border: solid 1px $grey;
+    border-radius: 8px;
+}
+
+.violet-card{
+    background-color: $mainColor;
+    padding: 8px 16px;
+    border: solid 1px $grey;
+    border-radius: 8px;
+}
+
+.violet-card:hover{
+    background-color: $secondaryColor;
+}
+
+.warning{   
+    border: solid 1px red;
+}
+
+.password-warning{   
+    border: solid 1px red;
+}
+.password-warning::after{
+    content: "Password Tidak Sama";
+    color: red;
+}
+
+.default-input:focus{
+    border: solid 1px $grey;
 }
 
 a{
     text-decoration: none;
     color:inherit;
+}
+
+.call-admin{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.text-link:hover{
+    color: $secondaryColor !important;
 }

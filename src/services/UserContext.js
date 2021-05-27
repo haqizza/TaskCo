@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react';
-import UserService from './User.service';
 
 export const UserContext = createContext();
 
@@ -8,14 +7,20 @@ export const UserProvider = (props) => {
         isLoggedIn: false,
         userType: '',
         userData: {
-            name: '',
-            bio: '',
-            displayName: ''
+            student_id: "",
+            faculty_id: "",
+            study_program_id: "",
+            student_name: "",
+            student_place_of_birth: "",
+            student_date_of_birth: "",
+            student_gender: "",
+            student_entry_year: "",
+            student_bio: "",
+            user_picture: "",
+            class_id: "",
+            class_representative: false,
         }
     });
-
-    // UserService.saveCurrentUser(user);
-    // setUser(UserService.getCurrentUser());
 
     return(
         <UserContext.Provider value={ [user, setUser] }>

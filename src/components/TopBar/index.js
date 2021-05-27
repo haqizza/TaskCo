@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../button';
 
 const TopBar = React.forwardRef((props,ref) => {
 
@@ -8,10 +7,7 @@ const TopBar = React.forwardRef((props,ref) => {
             <a href="/">
                 <h3 className="width-fit font-size-24">TaskCo</h3>
             </a>
-            
-            <Button action = { props.buttonAction }>
-                {props.children}
-            </Button>
+            {props.children}
         </div>
     );
 })

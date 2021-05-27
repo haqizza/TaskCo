@@ -4,11 +4,13 @@ const Button = (props) => {
     
     return(
         <button
-            className = { props.class || "default-button" }
+            className = { props.className || "default-button" }
             id = { props.id }
             type = { props.type }
             style = { props.style }
-            onClick = { props.action }
+            onClick = { props.onClick }
+            onMouseEnter = { props.onMouseEnter }
+            onMouseLeave = { props.onMouseLeave }
         >
             { props.children }
         </button>

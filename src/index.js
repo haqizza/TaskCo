@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { UserProvider } from './services/UserContext';
+import { ClassProvider } from './services/ClassContext';
 
 ReactDOM.render(
   <React.StrictMode>
       <UserProvider>
-        <App />
+        <ClassProvider>
+          <App />
+        </ClassProvider>
       </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')
